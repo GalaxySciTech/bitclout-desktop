@@ -1,12 +1,45 @@
 {
-  "name": "my-app",
+  "name": "BitcloutDesktop",
   "version": "0.1.0",
-  "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build:linux": "rm -rf dist/*dmg* && sudo node_modules/.bin/electron-builder -l",
+    "build:windows": "rm -rf dist/*dmg* && sudo node_modules/.bin/electron-builder -w",
+    "build:mac": "rm -rf dist/*dmg* && sudo node_modules/.bin/electron-builder -m"
   },
   "devDependencies": {
     "electron": "v12.0.2",
     "electron-builder": "^22.10.5"
+  },
+  "author": "paipaipaipai",
+  "repository": "github:xxx/xxx",
+  "build": {
+    "win": {
+      "icon": "img/log-192.png",
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false,
+      "menuCategory": true,
+      "allowElevation": false
+    },
+    "linux": {
+      "icon": "img/log-192.png",
+      "category": "Utility",
+      "target": [
+        "AppImage"
+      ]
+    },
+    "mac": {
+      "icon": "img/log-192.png",
+      "type": "development",
+      "category": "public.app-category.developer-tools",
+      "target": [
+        "dmg"
+      ]
+    }
   }
 }

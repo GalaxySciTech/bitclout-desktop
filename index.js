@@ -14,7 +14,8 @@ function createWindow () {
     })
 
     // 加载主页面内容 index.html
-    mainWindow.loadFile('index.html')
+    // mainWindow.loadFile('index.html')
+    mainWindow.loadURL('https://bitclout.com')
 
     mainWindow.on('closed', function () {
         mainWindow = null
