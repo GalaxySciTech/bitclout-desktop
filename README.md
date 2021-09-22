@@ -8,5 +8,5 @@ I made bitclout a desktop client, so you don’t have to open the webpage every 
 
 - Mac:[BitcloutDesktop-0.1.0.dmg](https://github.com/paipaipaipai/bitclout-desktop/releases/download/0.1.0/BitcloutDesktop-0.1.0.dmg "BitcloutDesktop-0.1.0.dmg")
 
-### Welcome to [support the author](https://bitclout.com/u/elonlai "support the author")
+### Welcome to [support the author](https://bitclout.com/u/lailaibtc "support the author")
 
